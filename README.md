@@ -1,16 +1,33 @@
-# React + Vite
+# Hero.io Productive Apps
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Responsive single-page experience for browsing, searching, and installing productivity apps. Includes live search, installation management with localStorage, detailed charts, and custom error handling.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Home hero with Play/App Store links, stats, and featured apps
+- All Apps page with live, case-insensitive search and loading states
+- App Details with Recharts ratings breakdown, install flow, success toasts, and description
+- My Installation page with localStorage persistence, uninstall + toast, and download sorting
+- Global navigation loader, route-safe reloads, and custom 404/app-not-found screens
 
-## React Compiler
+## Technologies
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 19 + Vite
+- React Router DOM 7
+- Recharts for data visualization
+- react-hot-toast for feedback
+- Custom CSS for responsive layout and animations
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+npm install
+npm run dev
+```
+
+## Production
+
+```
+npm run build
+npm run preview
+```
